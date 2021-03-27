@@ -26,7 +26,7 @@
     "postinstall": "patch-package",
     "start": "node ./bin/dungeon-revealer",
     "test": "jest --passWithNoTests",
-    "start:frontend:dev": "cross-env PORT=3001 EXTEND_ESLINT=true SKIP_TYPE_CHECK=true react-scripts start",
+    "start:frontend:dev": "cross-env PORT=3001 EXTEND_ESLINT=true SKIP_TYPE_CHECK=true SITE_TITLE='DR Dev' react-scripts start",
     "start:server:dev": "ts-node-dev --project server/tsconfig.json --no-deps server/index.js",
     "relay-compiler": "relay-compiler",
     "write-schema": "ts-node --project ./server/tsconfig.json  ./scripts/write-graphql-schema.ts",

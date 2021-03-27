@@ -211,7 +211,8 @@ const bootstrapServer = async (env) => {
   const indexHtml = path.join(env.PUBLIC_PATH, "index.html");
   const indexHtmlContent = fs
     .readFileSync(indexHtml, "utf-8")
-    .replace(/__PUBLIC_URL_PLACEHOLDER__/g, env.PUBLIC_URL);
+    .replace(/__PUBLIC_URL_PLACEHOLDER__/g, env.PUBLIC_URL)
+    .replace(/__SITE_TITLE_PLACEHOLDER__/g, env.SITE_TITLE);
 
   app.get("/", (_, res) => {
     res.send(indexHtmlContent);

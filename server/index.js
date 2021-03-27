@@ -30,6 +30,7 @@ Configuration:
 - HOST: ${env.HOST} 
 - PORT: ${env.PORT}
 - PUBLIC_URL: ${env.PUBLIC_URL || "<none>"}
+- SITE_TITLE: ${env.SITE_TITLE || "<none>"}
 
 dungeon-revealer is reachable via the following addresses:
 `);
