@@ -4,7 +4,7 @@ const { getDefaultDataDirectory } = require("./util");
 
 const PUBLIC_PATH = path.resolve(__dirname, "..", "build");
 const PUBLIC_URL = process.env.PUBLIC_URL || "";
-const SITE_TITLE = process.env.SITE_TITLE || "Dungeon Stealer";
+const SITE_TITLE = process.env.SITE_TITLE || "Wisps of Time - Maps";
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || "0.0.0.0";
 const PC_PASSWORD = process.env.PC_PASSWORD || null;
