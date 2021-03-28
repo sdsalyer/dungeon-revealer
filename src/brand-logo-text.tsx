@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled/macro";
+import { buildUrl } from "./public-url";
 
 const Heading = styled.div`
   font-family: folkard, palitino, serif;
@@ -7,7 +8,6 @@ const Heading = styled.div`
   margin-bottom: 42px;
   text-align: center;
   color: white;
-  width: 90%;
 `;
 
-export const BrandLogoText = () => <Heading><img src="/images/logo.png" alt="Wisps of Time - Maps" /></Heading>;
+export const BrandLogoText = () => <Heading><img src={buildUrl('/images/logo.png')} alt={process.env.SITE_TITLE} /></Heading>;

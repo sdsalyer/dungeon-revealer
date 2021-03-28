@@ -8,12 +8,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  //&:before {
+    background-image: url("${buildUrl("/images/default_background.jpg")}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: blur(.5em);
+    -webkit-filter: blur(.5em);
+  //}
 
-  background-image: url("${buildUrl("/images/default_background.jpg")}");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
 `;
 
 const Inner = styled.div`
